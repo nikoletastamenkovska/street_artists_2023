@@ -1,0 +1,220 @@
+
+#headerWraper {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+#curtainMenuInner {
+  background-color: var(--primary);
+  position: relative;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+
+#curtainMenuInner a {
+  letter-spacing: 0.2rem;
+  padding: 5px;
+  text-decoration: none;
+  color: var(--background-light);
+  font-size: 1.7rem;
+  display: block;
+  transition: 0.3s;
+}
+
+
+#curtainMenuInner a:hover,
+#curtainMenuInner a:focus {
+  background-color: var(--background-dark);
+}
+
+.pricing-wrapper,
+.chart-wrapper {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+}
+
+.pricing-wrapper {
+  background-color: var(--background-normal);
+}
+
+.chart-wrapper {
+  background-color: var(--background-light);
+}
+.chart-efficiency {
+  height: 290px;
+}
+
+.income-columns,
+.live-auction {
+  background-color: var(--primary);
+  color: var(--background-light);
+  height: 100px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.live-auction {
+  background-color: var(--primary-contrast);
+}
+
+#totalItemsSold,
+#totalIncome,
+#currentBid {
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.chartButtonWrapper button {
+  padding: 4px 32px;
+  border: none;
+  border-radius: 2px;
+  color: var(--text-light);
+  background-color: var(--primary);
+}
+
+/* artist items page*/
+
+#items {
+  font-family: Roboto;
+}
+
+.add-new-item-wrapper {
+  background-color: var(--background-light);
+  box-shadow: 0 4px 8px 0 rgba(51, 18, 10, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: var(--primary-contrast);
+}
+
+#addNewItemBtn {
+  padding: 10px 20px;
+}
+#addNewItemBtn:hover {
+  color: var(--primary-contrast);
+  background-color: var(--background-normal);
+
+}
+
+.add-new-item-col {
+  border: 2px dashed var(--primary);
+  padding: 2rem;
+}
+
+/*styling the cards*/
+
+.artist-card {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.6rem;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(51, 18, 10, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: var(--primary-contrast);
+}
+
+.artist-card:not(:first-child) {
+  margin-top: 25px;
+}
+
+.artist-card-image {
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 200px;
+}
+
+.explanation-card-container {
+  padding: 16px;
+  background-color: var(--background-light);
+  color: var(--primary);
+  position: relative;
+}
+.explanation-card-container h6 {
+  margin-bottom: 0;
+}
+
+.explanation-card-container span {
+  background-color: var(--primary);
+  box-shadow: 0 4px 8px 0 rgba(51, 18, 10, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: var(--primary-contrast);
+  color: var(--background-light);
+  border-radius: 3px;
+  padding: 3px 12px;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 12px;
+  right: 16px;
+}
+
+.explanation-card-container p {
+  margin-bottom: 0;
+}
+
+.card-date-created {
+  color: var(--background-dark);
+  padding-bottom: 10px;
+}
+
+.action-card-column {
+  background-color: var(--primary);
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.action-card-column button {
+  border-radius: 4px;
+  font-size: 0.8rem;
+  padding: 6px 18px;
+  color: var(--text-light);
+}
+
+.send-to-auction-btn {
+  background-color: var(--primary-blue);
+  box-shadow: 0 4px 8px 0 rgb(11, 34, 65, .5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: var(--primary-blue);
+}
+.send-to-auction-btn:hover {
+  background-color: #174888;
+}
+
+.unpublish-btn {
+  background-color: var(--primary-green);
+  box-shadow: 0 4px 8px 0 rgb(10, 59, 39, .5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: var(--primary-green);
+}
+
+.unpublish-btn:hover {
+  background-color: #12754e;
+}
+
+.remove-btn {
+  background-color: var(--primary-contrast);
+  box-shadow: 0 4px 8px 0 rgba(51, 18, 10, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: var(--primary-contrast);
+}
+.remove-btn:hover {
+  background-color: #8d331f;
+}
+
+.edit-btn,
+.publish-btn {
+  background-color: var(--background-light);
+  color: var(--primary) !important;
+  box-shadow: 0 4px 8px 0 rgba(53, 49, 44, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: var(--background-light);
+}
+.edit-btn:hover,
+.publish-btn:hover {
+  color: var(--primary-contrast) !important;
+  background-color: var(--background-normal);
+}

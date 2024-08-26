@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Street Artist</title>
+
+    <script
+      src="https://kit.fontawesome.com/8580703571.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="./app/styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="headerWraper" class="container-fluid p-0 m-0">
+      <header class="m-0">
+        <img class="logo" src="./app/images/logo.png" alt="logo image" />
+        <span class="streetArtistHeaderSpan">Street ARTists</span>
+        <img
+          class="auction-icon"
+          src="./app/images/bidding-auction.png"
+          alt="bidding image"
+        />
+        <img
+          class="hamburgerMenu-icon"
+          src="./app/images/hamburgerMenu.png"
+          alt="hamburger menu image"
+        />
+      </header>
+      <div id="curtainMenuInner" class="container px-0 py-3">
+        <a href="#artists">Home</a>
+        <a href="#items">Items</a>
+        <a href="#auction">Auction</a>
+      </div>
+    </div>
+
+    <section class="page" id="landing">
+      <div class="logo-central d-flex justify-content-center p-3">
+        <!-- don't forget to delete the id of the logo -->
+        <img
+          id="clickableLogo"
+          src="./app/images/logo.png"
+          alt="the logo image"
+        />
+      </div>
+
+      <div class="polygon pb-5">
+        <div class="polygon-artist">
+          <p>Join as Artist</p>
+          <select id="artists-selection">
+            <!-- <i class="fa-solid fa-caret-down"></i> -->
+            <!-- <img src="./app/images/select-icon.png" alt="icon of the select dropdown"> -->
+          </select>
+        </div>
+        <div class="polygon-visitor">
+          <p>Join as Visitor</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- visitor home page -->
+    <section class="page" id="visitor">
+      <div class="banner">
+        <div class="row p-0">
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+        </div>
+        <div class="row p-0">
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+        </div>
+        <div class="row p-0">
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+        </div>
+        <div class="row p-0">
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+        </div>
+        <div class="row p-0">
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+        </div>
+        <div class="row p-0">
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+        </div>
+        <div class="row p-0">
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+        </div>
+        <div class="row p-0">
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+        </div>
+        <div class="row p-0">
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+        </div>
+        <div class="row p-0">
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+          <div class="col tile"></div>
+        </div>
+
+        <div class="above-banner">
+          <div class="left-above-banner">
+            <p>Looking for masterpiece?</p>
+          </div>
+          <div class="right-above-banner">
+            <button id="call_to_action">Find one now!</button>
+          </div>
+        </div>
+      </div>
+      <div id="images-wrapper-container" class="slider">
+        <div id="images-row-to-left" class="top"></div>
+        <div id="images-row-to-left" class="bottom"></div>
+      </div>
+      <div id="carousel-wrapper" class="container px-3">
+        <div class="row m-0">
+          <div class="col">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide carousel-fade"
+              data-interval="5000"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div
+                  class="carousel-item active d-flex justify-content-between align-items-center p-2"
+                >
+                  <div class="image-caption p-3 w-50">
+                    <img
+                      class="d-block carousel-image"
+                      src="/app/images/artist1.jpeg"
+                      alt="First slide"
+                    />
+                    <p class="mb-0">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsam tempore quae accusantium quaerat ratione soluta!
+                    </p>
+                  </div>
+                  <div class="border-pinkish text-center w-50">
+                    <p class="mb-0 p-4">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Quasi ipsam impedit natus ab voluptatibus. Ab maxime
+                      veritatis asperiores suscipit provident qui magni,
+                      similique consequatur. Beatae consequatur quis consectetur
+                      amet cupiditate dolores ullam veritatis autem facere?
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="carousel-item d-flex justify-content-between align-items-center p-2"
+                >
+                  <div class="image-caption p-3 w-50">
+                    <img
+                      class="d-block carousel-image"
+                      src="/app/images/artist2.jpeg"
+                      alt="Second slide"
+                    />
+                    <p class="mb-0">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Dolorum, autem. Natus maxime odio tempora doloremque!
+                    </p>
+                  </div>
+                  <div class="border-pinkish text-center w-50">
+                    <p class="mb-0 p-4">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Quasi ipsam impedit natus ab voluptatibus. Ab maxime
+                      veritatis asperiores suscipit provident qui magni,
+                      similique consequatur. Beatae consequatur quis consectetur
+                      amet cupiditate dolores ullam veritatis autem facere?
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="carousel-item d-flex justify-content-between align-items-center p-2"
+                >
+                  <div class="image-caption p-3 w-50">
+                    <img
+                      class="d-block carousel-image"
+                      src="/app/images/artist3.jpeg"
+                      alt="Third slide"
+                    />
+                    <p class="mb-0">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fuga, ratione magnam dignissimos odit sunt earum!
+                    </p>
+                  </div>
+                  <div class="border-pinkish text-center w-50">
+                    <p class="mb-0 p-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Velit natus, tempora cumque officia iure fugit et maiores
+                      ad assumenda eveniet voluptatum. Harum repellendus
+                      quibusdam blanditiis fugit sint rerum ducimus iure eum
+                      neque, assumenda perspiciatis vitae.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev pr-5"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="prev"
+              >
+                <span aria-hidden="true"
+                  ><img
+                    src="./app/images/previous.png"
+                    alt="image for previous slide"
+                /></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next pl-5"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="next"
+              >
+                <span aria-hidden="true">
+                  <img src="./app/images/next.png" alt="image for next slide"
+                /></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- visitor listing page -->
+    <section class="page" id="visitorListing">
+      <div class="container p-0 positioning-container">
+        <div class="row m-0">
+          <div id="visitorAllCardColumn" class="col p-0">
+            <div id="filterOpener" class="col p-0 overlay">
+              <img
+                class="closeFiltersBtn"
+                src="./app/images/exit-btn.png"
+                alt="exit button image"
+              />
+              <form class="overlay-content">
+                <div class="form-group street-artist-form-group">
+                  <h3>Filter by</h3>
+                  <p>By Item Title</p>
+                  <label for="filterByTitle"> </label>
+                  <input
+                    class="street-artist-input"
+                    id="filterByTitle"
+                    type="text"
+                    placeholder="Search by title"
+                  />
+                  <hr />
+                  <h6>By Artist</h6>
+                  <label for="filterByArtist"> </label>
+                  <select class="street-artist-select" id="filterByArtist">
+                    <option value="" selected>Select Artist</option>
+                  </select>
+                  <hr />
+                  <h6>By Price</h6>
+                  <div
+                    class="price-input-wrapper d-flex justify-content-between"
+                  >
+                    <label for="filterByMin">Min: </label>
+                    <input
+                      class="street-artist-input"
+                      id="filterByMin"
+                      type="number"
+                      placeholder="Enter min prize"
+                    />
+                    <label for="filterByMax">Max: </label>
+                    <input
+                      class="street-artist-input"
+                      id="filterByMax"
+                      type="number"
+                      placeholder="Enter max prize"
+                    />
+                  </div>
+                  <hr />
+                  <h6>By type</h6>
+                  <label for="filterByType"></label>
+                  <select class="street-artist-select" id="filterByType">
+                    <option value="" selected>Select Type</option>
+                  </select>
+                </div>
+              </form>
+              <img
+                class="confirmFiltersBtn"
+                src="./app/images/confirtm-btn.png"
+                alt="confirm button image"
+              />
+            </div>
+            <div id="visitorCardContainerWrapper"></div>
+            <span class="d-flex justify-content-center"
+              ><i
+                id="scroll-up"
+                class="fa-solid fa-chevron-up fa-3x text-right"
+              ></i
+            ></span>
+            <button id="buttonFilterVisitorCards" class="p-0">
+              <img src="./app/images/button-filter.png" alt="filter button" />
+            </button>
+            <div id="scrollMessage" class="text-center">
+              For more amazing art ...
+            </div>
+          </div>
+        </div>
+        <div class="row m-0">
+          <div class="col p-0 slider">
+            <div class="slider-inner"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- artist home page -->
+    <section class="page" id="artists">
+      <div class="container pricing-wrapper text-center px-0 py-2">
+        <div class="row mx-0 d-flex">
+          <div class="col p-2">
+            <div class="income-columns">
+              <p class="mb-0">Total Items Sold</p>
+              <span id="totalItemsSold"></span>
+            </div>
+          </div>
+          <div class="col p-2">
+            <div class="income-columns">
+              <p class="mb-0">Total Income</p>
+              <span id="totalIncome"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div id="liveAuctioningItem" class="col p-2">
+            <div class="live-auction mx-auto">
+              <p class="mb-0">Live Auctioning Item</p>
+              <span id="currentBid"></span>
+              <p class="m-0">current bid</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container chart-wrapper p-0">
+        <div class="row m-0">
+          <div class="col p-2">
+            <p class="mb-0">Display my income for last</p>
+            <div class="chartButtonWrapper py-3 d-flex justify-content-between">
+              <button id="lastSeven">7 Days</button>
+              <button id="lastFourtheen">14 Days</button>
+              <button id="lastThirty">30 Days</button>
+            </div>
+            <div class="chart-efficiency">
+              <canvas id="myChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- artist-items page -->
+    <section class="page" id="items">
+      <div class="container add-new-item-wrapper p-0 my-4">
+        <div id="addNewItemBtn" class="row m-0">
+          <div class="col text-center add-new-item-col">+ Add new Item</div>
+        </div>
+      </div>
+      <div id="artistItemsWrapper" class="container p-0"></div>
+    </section>
+
+    <!-- artist add new item page -->
+    <section class="page" id="addNewItem">
+      <div
+        class="wrapper-add-new-title-published d-flex justify-content-between align-items-center py-3"
+      >
+        <h3 class="col-7 px-0 mb-0">Add new Item</h3>
+        <label
+          class="px-0 col-5 mb-0 text-right"
+          id="labelForInputIsPublished"
+          for="inputIsPublished"
+          >Is published
+          <input
+            type="checkbox"
+            id="inputIsPublished"
+            name="inputIsPublished"
+            value="inputIsPublished"
+            checked /></label
+        ><br />
+      </div>
+      <form class="add-new-item-form">
+        <div class="form-group">
+          <label for="inputForTitle">Title</label>
+          <input class="form-control" type="text" id="inputForTitle" />
+        </div>
+        <div class="form-group">
+          <label for="textareaForDescription">Description</label>
+          <textarea
+            class="form-control"
+            id="textareaForDescription"
+            rows="3"
+          ></textarea>
+        </div>
+        <div class="form-group d-flex">
+          <div class="w-50 pr-2">
+            <label for="inputForType">Type</label>
+            <select id="inputForType" class="form-select form-control"></select>
+          </div>
+          <div class="w-50 pl-2">
+            <label for="inputForPrice">Price</label>
+            <input class="form-control" type="number" id="inputForPrice" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputForImageURL">Image URL</label>
+          <input class="form-control" type="text" id="inputForImageURL" />
+          <div class="text-center my-3">or</div>
+          <label
+            for="inputImage"
+            id="takeASnapshotBtn"
+            class="take-a-snapshot-wrapper text-center w-100"
+          >
+            <input class="d-none" type="text" />
+            <img src="./app/images/camera.png" alt="image of a camera" />
+            <p class="mb-0 mt-2">Take a snapshot</p>
+            <img id="capturedImage" />
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="inputForArtist">Artist</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputForArtist"
+            name="artist"
+          />
+        </div>
+        <div class="form-group">
+          <label for="inputForDateCreated">Date created</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputForDateCreated"
+            name="dateCreated"
+          />
+        </div>
+        <div class="form-group d-flex">
+          <div class="w-50 pr-2">
+            <button id="confirmAddNewItem" class="form-control">
+              Add New Item
+            </button>
+          </div>
+          <div class="w-50 pl-2">
+            <button id="cancelBtn" class="form-control">Cancel</button>
+          </div>
+        </div>
+        <!-- falat nekolku proveri!!! -->
+      </form>
+    </section>
+
+    <!-- artist capture image page -->
+
+    <section class="page" id="artistCaptureImagePopUp">
+      <div class="text-center py-5">
+        <video id="liveStream" autoplay></video>
+      </div>
+      <canvas class="d-none" id="captureStream"></canvas>
+      <div class="text-center capture-image-div">
+        <img
+          id="captureImage"
+          src="./app/images/camera.png"
+          alt="image of a camera"
+        />
+      </div>
+    </section>
+
+    <!-- auction page -->
+
+    <section class="page" id="auction">
+      <div id="auctionWrapper">
+        <div class="row mx-0">
+          <div id="auctionInProgress" class="col p-2">
+            <div class="card-art-content">
+              <img src="" alt="" />
+              <h6></h6>
+              <h4 id="contentTimer"></h4>
+            </div>
+            <div class="mx-auto auction-biding-content-container">
+              <div>Highest Bid: <span id="highestBid"></span></div>
+              <input type="number" id="biddingInput" />
+              <button id="bidButton">Bid</button>
+              <div class="history">
+                <ul id="biddingHistory"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script type="module" src="./app/main.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

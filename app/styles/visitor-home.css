@@ -1,0 +1,85 @@
+
+
+.slider {
+  background-color: var(--background-normal);
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider .top,
+.slider .bottom {
+  display: flex;
+  gap: 30px;
+  margin: 30px 0;
+}
+.slider .top:hover,
+.slider .bottom:hover {
+  animation-play-state: paused;
+}
+
+.slider .top {
+  animation: slide 100s infinite linear reverse;
+}
+
+.slider .bottom {
+  animation: slide 100s infinite linear;
+}
+
+.slider .top img,
+.slider .bottom img {
+  width: auto;
+  height: 120px;
+  transition: transform 0.15s ease-in-out;
+  filter: drop-shadow(0rem 0.1rem 0.1rem rgb(75, 74, 74));
+}
+
+.slider .top img:hover,
+.slider .bottom img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-2500px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+#carousel-wrapper {
+  background-color: var(--background-light);
+}
+
+.carousel-inner {
+  font-family: "Roboto";
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+.image-caption {
+  position: relative;
+}
+.image-caption > p {
+  padding-inline: 10px;
+  padding-top: 35px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}
+.carousel-image {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+  position: absolute;
+  top: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.border-pinkish {
+  border-left: 1px solid var(--primary);
+  color: var(--primary);
+}

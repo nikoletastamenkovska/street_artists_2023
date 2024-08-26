@@ -1,0 +1,148 @@
+
+
+.visitorCardContainerWrapper {
+  background-color: var(--background-normal);
+  padding-top: 25px;
+  font-size: 0.6rem;
+  font-family: 'Roboto', sans-serif;
+}
+.card-body {
+  font-family: 'Roboto';
+  font-size: 0.6rem;
+}
+
+.artist-name-visitor-card {
+  font-family: "Reenie Beanie", cursive;
+}
+
+.visitor-card-img {
+  height: 200px;
+}
+.artist-price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.visitor-img-price {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  font-size: 0.7rem;
+  padding: 4px 8px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card.light {
+  background-color: var(--background-light);
+  color: var(--primary);
+}
+
+.card.light > div .visitor-img-price {
+  background-color: var(--primary);
+  color: var(--background-light);
+}
+
+.card.dark {
+  background-color: var(--primary);
+  color: var(--background-light);
+}
+
+.card.dark > div .visitor-img-price {
+  background-color: var(--background-light);
+  color: var(--primary);
+}
+
+#scrollMessage {
+  font-size: 1.5rem;
+}
+
+#visitorAllCardColumn {
+  position: relative;
+}
+#buttonFilterVisitorCards {
+  position: sticky;
+  bottom: 20px;
+  left: 335px;
+  background-color: transparent;
+  border: none;
+  z-index: 998;
+}
+#buttonFilterVisitorCards img {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+/*curtain*/
+
+.overlay {
+  font-family: 'Roboto';
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  right: 0;
+  top: 0px;
+  background-color: var(--primary);
+  color: var(--background-normal);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  padding: 8px 16px;
+  top: 10%;
+  width: 100%;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.overlay-content > *label > input {
+  border: 1px solid var(--primary);
+  outline: none;
+  border-radius: 4px;
+}
+
+.overlay .closeFiltersBtn,
+.overlay .confirmFiltersBtn {
+  padding: 10px;
+  display: block;
+  transition: 0.3s;
+  position: absolute;
+  right: 10px;
+}
+
+.overlay hr {
+  background-color: var(--background-light);
+  height: 1px;
+}
+
+.closeFiltersBtn {
+  top: 85px;
+  z-index: 1;
+}
+.confirmFiltersBtn {
+  bottom: 10px;
+  width: 90px;
+  aspect-ratio: 1;
+}
+
+.street-artist-select,
+.street-artist-input {
+  width: 130px;
+  height: 30px;
+  border-radius: 4px;
+  outline: none;
+  overflow: hidden;
+  border: 1px solid var(--background-light);
+  color: var(--background-light);
+  background-color: var(--primary);
+  font-weight: lighter;
+}
+
+.street-artist-select::placeholder,
+.street-artist-input::placeholder {
+  color: var(--background-light);
+  font-family: 'Roboto', sans-serif;
+  padding: 2px 4px;
+}

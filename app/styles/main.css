@@ -1,0 +1,234 @@
+@import "./visitor-home.css";
+@import "./visitor-listing.css";
+@import "./artist-home-page.css";
+@import "./artist-add-item.css";
+
+:root {
+  --primary: #a16a5e;
+  --background-dark: #e09686;
+  --background-light: #fcebd5;
+  --background-normal: #edd5bb;
+  --banner-color: #f5e3cb;
+  --text-light: #f8f8f8;
+  --primary-contrast: #d44c2e;
+  --primary-blue: #1b59ac;
+  --primary-green: #1bac6f;
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+body {
+  font-family: "Reenie Beanie", cursive;
+  background-color: var(--background-normal);
+  color: var(--primary);
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  text-align: center;
+  box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  background-color: var(--background-light);
+}
+
+header > span {
+  font-size: 1.8rem;
+  margin-left: 30%;
+}
+
+.logo {
+  position: fixed;
+  left: 0%;
+  top: 1px;
+  z-index: 1000;
+  width: 120px;
+}
+
+#landing {
+  background-color: var(--background-light);
+  height: 90vh;
+}
+
+.auction-icon,
+.hamburgerMenu-icon {
+  position: absolute;
+  right: 5%;
+  padding: 8px 0px;
+}
+
+.polygon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.polygon-artist,
+.polygon-visitor {
+  width: 250px;
+  height: 400px;
+  position: relative;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.polygon-artist {
+  background: var(--background-normal);
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 30%);
+}
+.polygon-artist:hover,
+.polygon-visitor:hover {
+  width: 265px;
+  height: 385px;
+  z-index: 1;
+  box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.polygon-visitor {
+  background-color: var(--primary);
+  clip-path: polygon(0 30%, 100% 70%, 100% 100%, 0 100%);
+  margin-top: -400px;
+  color: var(--background-light);
+}
+
+.polygon-artist p {
+  position: absolute;
+  top: 15%;
+}
+
+.polygon-visitor p {
+  position: absolute;
+  top: 70%;
+}
+#artists-selection {
+  font-family: Roboto;
+  background-color: var(--background-normal);
+  font-size: 1rem;
+  padding: 5px;
+  position: absolute;
+  top: 30%;
+  right: 13%;
+  width: 100px;
+  margin-top: 15px;
+  border-color: var(--primary);
+  color: var(--primary);
+  border-radius: 3px;
+}
+
+.banner {
+  background-color: var(--banner-color);
+  position: relative;
+  margin-inline: 15px;
+}
+
+.above-banner {
+  width: 350px;
+  font-family: Roboto;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.left-above-banner {
+  font-size: 1.8rem;
+}
+
+.right-above-banner button {
+  font-size: 0.8rem;
+  width: 120px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: var(--primary);
+  background-color: var(--primary);
+  color: var(--banner-color);
+}
+
+.banner .tile {
+  background-image: url(/app/images/tile.png);
+  background-repeat: space;
+  background-color: var(--banner-color);
+  height: 18px;
+  border: 1px solid var(--banner-color);
+}
+
+.banner .row:nth-child(even) {
+  transform: translateX(-5%);
+}
+
+.page {
+  display: none;
+}
+
+#auctionWrapper {
+  font-size: 1.2rem;
+  font-family: Roboto;
+  background-color: var(--background-light);
+  padding: 20px;
+  height: 90vh;
+}
+.auction-biding-content-container {
+  background-color: var(--primary-contrast);
+  color: var(--background-light);
+  text-align: center;
+  border-radius: 4px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px 0 rgba(51, 18, 10, 0.5),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.auction-biding-content-container input,
+.auction-biding-content-container button {
+  border-radius: 4px;
+  background-color: var(--background-normal);
+  color: var(--primary-contrast);
+  outline: none;
+  border: var(--background-normal);
+}
+.card-art-content {
+  text-align: center;
+}
+.card-art-content img {
+  width: 80%;
+  aspect-ratio: 1;
+  box-shadow: 0 4px 8px 0 rgba(51, 18, 10, 0.5),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-art-content h6 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Reenie Beanie", cursive;
+  font-size: 1.2rem;
+}
+#biddingHistory {
+  list-style-type: none;
+  text-align: left;
+  font-size: .8rem;
+}
+.dataIsBiding {
+  color: greenyellow;
+  font-weight: bolder;
+  padding-left: 50px;
+}
+.dataIsNotBidingAnymore {
+  color: var(--primary-blue);
+  font-weight: bolder;
+  padding-left: 50px;
+
+
+}

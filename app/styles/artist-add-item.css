@@ -1,0 +1,78 @@
+
+#addNewItem {
+  padding: 10px 20px;
+
+}
+
+#addNewItem,
+#artistCaptureImagePopUp {
+  background-color: var(--primary);
+  color: var(--background-light);
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  font-size: 1.2rem;
+}
+
+
+#addNewItem label {
+    margin-bottom: 0;
+}
+
+#addNewItem input,
+#addNewItem textarea,
+#addNewItem select {
+    color: var(--background-light);
+    background-color: transparent;
+    border: 1px solid var(--background-light);
+}
+
+.selected-options-for-input-type {
+   color: var(--background-light);
+   background-color: var(--primary);
+}
+
+/* #addNewItem input::placeholder,
+#addNewItem textarea::placeholder,
+#addNewItem select::placeholder {
+    color: var(--primary-contrast);
+} */
+
+#addNewItem button {
+    font-weight: bold;
+}
+
+#inputIsPublished {
+  accent-color: var(--background-light);
+}
+
+.take-a-snapshot-wrapper {
+    padding-top: 100px;
+    padding-bottom: 90px;
+    border: 2px dashed;
+    border-radius: 4px;
+    position: relative;
+}
+
+#confirmAddNewItem {
+    background-color: var(--primary-contrast);
+    border: var(--primary-contrast);
+    color: var(--background-light);
+}
+
+#liveStream {
+    width: 95%;
+    height: 60vh;
+}
+
+.capture-image-div {
+    padding-bottom: 50px;
+}
+
+#capturedImage {
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    border-radius: 4px;
+    top: 0;
+    left: 0;
+}
